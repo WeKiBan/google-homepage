@@ -64,9 +64,9 @@ body{
     min-width:1000px;
     font-family: Arial, sans-serif;
     font-size: 13px;
-    padding-top:8px;
+    line-height: 28px;
     position: absolute;
-    top:8px;
+    top:20px;
     display: flex;
     justify-content: space-between;
 }
@@ -95,8 +95,8 @@ body{
 
 #sign-in a{
     
-    background-color: rgb(59, 114, 214);
-    border-radius: 3px;
+    background-color: #4387fd;
+    border-radius: 2px;
     color: white;
     font-weight: bold;
     border: none;
@@ -121,30 +121,56 @@ body{
 #logo{
     margin: auto;
     display: block;
-    margin-bottom: 20px;
+    padding-bottom:20px;
 }
 
-#search-bar{
+#search-container{
     border-radius: 50px;
-    width: 400px;
-    height: 30px;
+    width: 450px;
+    height: 40px;
     margin: auto;
     display: block;
     border: 1px rgb(228, 228, 228) solid;
     
 }
 
-#search-bar:focus{
-    outline: none;
+#search-bar{
+    width:80%;
+    background-color: transparent;
+    border:none;
+    height:100%;
+    margin: auto;
+    padding: 0;
+    color: rgba(0,0,0,.87);
+    word-wrap: break-word;
+    display: flex;
+    flex: 100%;
+    margin-top: -42px;
+}
+
+#icon-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:100%;
+}
+
+#mag-glass{
+    padding-left:12px;
+    opacity: 0.5;
+}
+
+#mic-icon{
+    padding-right:15px;
+    opacity: 0.5;
 }
 
 
-#search-bar:hover{
+
+#search-container:hover{
     box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
     border-color: rgba(223,225,229,0);
 }
-    
-
 
 #button-container{
     margin: auto;
